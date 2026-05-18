@@ -5,38 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fernando Bravo | Soluciones de Gestión y Datos</title>
   <meta name="description" content="Portfolio de Fernando Bravo, desarrollador orientado a soluciones de gestión, automatización, datos y aplicaciones útiles con Java, JavaFX, Python y SQL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
+  <div class="bg-glow" aria-hidden="true"></div>
   <main class="container">
-    <nav class="navbar">
+    <header class="navbar">
       <a class="brand" href="#">Fernando<span>.</span></a>
-      <div class="nav-links">
+      <nav class="nav-links" aria-label="Navegación principal">
         <a href="#proyectos">Proyectos</a>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#contacto">Contacto</a>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <section class="hero">
       <div class="hero-card">
-        <div class="eyebrow">● Soluciones de gestión, datos y automatización</div>
-        <h1>Fernando <span>Bravo</span></h1>
+        <div class="eyebrow">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          Soluciones de gestión, datos y automatización
+        </div>
+        <h1>Fernando <span class="gradient-text">Bravo</span></h1>
         <p class="hero-description">
           Desarrollo aplicaciones útiles para ordenar procesos, gestionar información y transformar datos en herramientas prácticas. Me enfoco en sistemas de escritorio, bases de datos, automatización y soluciones pensadas para usuarios reales.
         </p>
         <div class="cta-row">
-          <a class="button primary" href="https://github.com/bravofernando98" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
+          <a class="button primary" href="https://github.com/ferbravo98" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            Ver GitHub
+          </a>
           <a class="button secondary" href="#proyectos">Ver proyectos</a>
-          <a class="button secondary" href="mailto:bravofernando98@gmail.com">Contactarme</a>
+          <a class="button ghost" href="mailto:bravofernando98@gmail.com">Contactarme</a>
         </div>
       </div>
 
       <aside class="profile-card">
-        <div class="avatar">FB</div>
-        <h2>@bravofernando98</h2>
-        <p>Java · JavaFX · Python · SQL · Datos</p>
-        <div class="status"><span class="status-dot"></span>Buscando mi primera oportunidad IT</div>
+        <div class="avatar-ring">
+          <div class="avatar">FB</div>
+        </div>
+        <h2>@ferbravo98</h2>
+        <p class="profile-stack">Java · JavaFX · Python · SQL · Datos</p>
+        <div class="status">
+          <span class="status-dot"></span>
+          Buscando mi primera oportunidad IT
+        </div>
       </aside>
     </section>
 
@@ -64,64 +80,113 @@
     <section class="section" id="proyectos">
       <div class="section-header">
         <div>
+          <p class="section-label">Portfolio</p>
           <h2 class="section-title">Proyectos destacados</h2>
           <p class="section-subtitle">Sistemas construidos para resolver necesidades reales: gestión, registros, datos, reportes y procesos administrativos.</p>
         </div>
       </div>
 
       <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-tag">Proyecto principal</div>
-          <h3>Sistema de Consultorio Médico</h3>
-          <p>Aplicación de escritorio para gestionar pacientes, consultas, historia clínica, estudios, vacunación y exportación de documentos.</p>
-          <div class="tech-list">
-            <span>Java</span>
-            <span>JavaFX</span>
-            <span>SQL</span>
-            <span>PDF</span>
+        <article class="project-card project-card--featured">
+          <div class="project-media">
+            <img class="project-image" src="assets/img/listadoPaciente.jpg" alt="Captura del sistema de consultorio médico">
+            <div class="project-media-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tag">Proyecto principal</div>
+            <h3>Sistema de Consultorio Médico</h3>
+            <p>Aplicación de escritorio para gestionar pacientes, consultas, historia clínica, estudios, vacunación y exportación de documentos.</p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/ferbravo98/ConsultorioMedico" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="proyectos/consultorio.html">Ver más</a>
+              </div>
+              <div class="tech-icons" aria-label="Tecnologías">
+                <i class="devicon-java-plain" title="Java"></i>
+                <i class="devicon-mysql-plain" title="MySQL"></i>
+                <i class="devicon-git-plain" title="Git"></i>
+              </div>
+            </div>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-tag">Gestión personal</div>
-          <h3>App de Mantenimiento de Vehículos</h3>
-          <p>Sistema para registrar autos y motos, controlar mantenimientos y diferenciar tipos de reparación según el vehículo.</p>
-          <div class="tech-list">
-            <span>Java</span>
-            <span>JavaFX</span>
-            <span>SQLite</span>
-          </div>
-        </article>
+  <div class="project-media">
+    <img class="project-image" src="assets/img/vehiculos.jpg" alt="Captura de la app de mantenimiento de vehículos">
+    <div class="project-media-overlay"></div>
+  </div>
+
+  <div class="project-body">
+    <div class="project-tag">Gestión personal</div>
+    <h3>App de Mantenimiento de Vehículos</h3>
+    <p>
+      Sistema para registrar autos y motos, controlar mantenimientos, visualizar costos
+      y diferenciar reparaciones según el tipo de vehículo.
+    </p>
+
+    <div class="project-footer">
+      <div class="project-links">
+        <a href="https://github.com/ferbravo98/mi-garaje-control" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="proyectos/vehiculos.html">Ver más</a>
+      </div>
+
+      <div class="tech-icons" aria-label="Tecnologías">
+        <i class="devicon-python-plain" title="Python"></i>
+        <i class="devicon-sqlite-plain" title="SQLite"></i>
+        <i class="devicon-git-plain" title="Git"></i>
+      </div>
+    </div>
+  </div>
+</article>
 
         <article class="project-card">
-          <div class="project-tag">Negocios</div>
-          <h3>Control de Caja</h3>
-          <p>Mini app pensada para pequeños negocios, con registro simple de ingresos, egresos y resumen de caja.</p>
-          <div class="tech-list">
-            <span>Python</span>
-            <span>Tkinter</span>
-            <span>SQLite</span>
-          </div>
-        </article>
+  <div class="project-media">
+    <img class="project-image" src="assets/img/caja.jpg" alt="Captura de la app de control de caja">
+    <div class="project-media-overlay"></div>
+  </div>
+
+  <div class="project-body">
+    <div class="project-tag">Negocios</div>
+    <h3>Control de Caja</h3>
+    <p>
+      Aplicación simple para pequeños negocios, orientada al registro de ingresos,
+      egresos, métodos de pago y resumen del dinero del turno.
+    </p>
+
+    <div class="project-footer">
+      <div class="project-links">
+        <a href="https://github.com/ferbravo98/sistema-caja-negocio" target="_blank">GitHub</a>
+        <a href="proyectos/caja.html">Ver más</a>
+      </div>
+
+      <div class="tech-icons" aria-label="Tecnologías">
+        <i class="devicon-python-plain" title="Python"></i>
+        <i class="devicon-sqlite-plain" title="SQLite"></i>
+        <i class="devicon-git-plain" title="Git"></i>
+      </div>
+    </div>
+  </div>
+</article>
       </div>
     </section>
 
     <section class="section" id="sobre-mi">
       <div class="section-header">
         <div>
+          <p class="section-label">Perfil</p>
           <h2 class="section-title">Sobre mí</h2>
           <p class="section-subtitle">Me interesa unir desarrollo de software, análisis de procesos y tratamiento de datos para construir herramientas útiles.</p>
         </div>
       </div>
 
       <div class="about-card">
-        <div>
+        <div class="about-block">
           <h3>Mi enfoque</h3>
           <p>
             Me gusta analizar cómo se organiza la información dentro de un negocio, consultorio o proceso cotidiano, para luego convertir esa necesidad en una aplicación simple, clara y funcional. Mi objetivo es crecer hacia un perfil técnico orientado a sistemas de gestión, automatización y datos.
           </p>
         </div>
-        <div>
+        <div class="about-block">
           <h3>Actualmente trabajo con</h3>
           <ul>
             <li>Aplicaciones de escritorio con JavaFX y Tkinter.</li>
@@ -136,25 +201,66 @@
     <section class="section" id="contacto">
       <div class="section-header">
         <div>
+          <p class="section-label">Conectar</p>
           <h2 class="section-title">Links</h2>
           <p class="section-subtitle">Mis canales principales para mostrar proyectos, conectar y recibir oportunidades.</p>
         </div>
       </div>
 
-      <div class="links-grid">
+      <a
+        class="linkedin-showcase"
+        href="https://www.linkedin.com/in/fernando-nicolas-bravo-b42b54286/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ver perfil de Fernando Bravo en LinkedIn"
+      >
+        <div class="linkedin-showcase__pattern" aria-hidden="true"></div>
+        <div class="linkedin-showcase__inner">
+          <div class="linkedin-showcase__profile">
+            <div class="linkedin-showcase__avatar">FB</div>
+            <div class="linkedin-showcase__identity">
+              <span class="linkedin-showcase__badge">
+                <i class="devicon-linkedin-plain" aria-hidden="true"></i>
+                LinkedIn
+              </span>
+              <h3 class="linkedin-showcase__name">Fernando Nicolás Bravo</h3>
+              <p class="linkedin-showcase__headline">Desarrollador de software · Sistemas de gestión, datos y automatización</p>
+              <p class="linkedin-showcase__meta">Argentina · Abierto a oportunidades IT</p>
+            </div>
+          </div>
+          <div class="linkedin-showcase__aside">
+            <p class="linkedin-showcase__pitch">
+              Construyo aplicaciones de escritorio y herramientas que ordenan procesos reales. Si buscás perfil junior con enfoque práctico, conversemos.
+            </p>
+            <ul class="linkedin-showcase__skills" aria-label="Competencias destacadas">
+              <li>Java</li>
+              <li>JavaFX</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Git</li>
+              <li>PDF / Reportes</li>
+            </ul>
+            <span class="linkedin-showcase__cta">
+              Ver perfil y conectar
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <div class="links-grid links-grid--compact">
         <a class="link-card" href="https://github.com/ferbravo98" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true">↗</span>
           <strong>GitHub</strong>
           <span>Repositorios y proyectos</span>
         </a>
-        <a class="link-card" href="https://www.linkedin.com/in/fernando-nicolas-bravo-b42b54286/" target="_blank" rel="noopener noreferrer">
-          <strong>LinkedIn</strong>
-          <span>Perfil profesional</span>
-        </a>
         <a class="link-card" href="mailto:bravofernando98@gmail.com">
+          <span class="link-icon" aria-hidden="true">✉</span>
           <strong>Email</strong>
           <span>Contacto directo</span>
         </a>
         <a class="link-card" href="#" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon" aria-hidden="true">↓</span>
           <strong>CV</strong>
           <span>Descargar currículum</span>
         </a>
