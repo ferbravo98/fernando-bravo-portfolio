@@ -991,3 +991,21 @@ footer {
     scroll-behavior: auto;
   }
 }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.gallery-image {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  transition: transform 0.25s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.02);
+}
