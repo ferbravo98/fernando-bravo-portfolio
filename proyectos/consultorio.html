@@ -112,28 +112,124 @@
     <section class="section">
       <div class="section-header">
         <div>
-          <p class="section-label">Captura</p>
-          <h2 class="section-title">Vista del proyecto</h2>
+          <p class="section-label">Módulos</p>
+          <h2 class="section-title">Vista funcional del sistema</h2>
           <p class="section-subtitle">
-            Captura del listado de pacientes y navegación principal del sistema.
+            Capturas organizadas por módulo para mostrar el flujo principal del sistema de consultorio médico.
           </p>
         </div>
       </div>
 
-      <div class="project-card project-card--featured">
-        <div class="project-media">
-          <img class="project-image" src="../assets/img/listadoPaciente.jpg" alt="Captura del sistema de consultorio médico">
-          <div class="project-media-overlay"></div>
-        </div>
+      <div class="module-showcase">
+        <article class="module-block">
+          <div class="project-body">
+            <div class="project-tag">Gestión de pacientes</div>
+            <h3>Listado, alta y detalle del paciente</h3>
+            <p>
+              Permite registrar nuevos pacientes, consultar el listado general y acceder al detalle individual
+              con la información administrativa y clínica correspondiente.
+            </p>
+          </div>
 
-        <div class="project-body">
-          <div class="project-tag">Sistema de escritorio</div>
-          <h3>Gestión de pacientes</h3>
-          <p>
-            El sistema permite centralizar información del paciente y acceder a datos
-            clínicos relevantes desde una interfaz visual.
-          </p>
-        </div>
+          <div class="gallery-grid">
+            <img class="gallery-image js-lightbox"
+                 src="../assets/img/consultorio-medico/listado-pacientes.png"
+                 alt="Listado de pacientes del sistema de consultorio médico">
+
+            <img class="gallery-image js-lightbox"
+                 src="../assets/img/consultorio-medico/nuevo-paciente.png"
+                 alt="Formulario para registrar nuevo paciente">
+
+            <img class="gallery-image js-lightbox"
+                 src="../assets/img/consultorio-medico/detalle-paciente.png"
+                 alt="Detalle del paciente en el sistema de consultorio médico">
+          </div>
+        </article>
+
+        <article class="module-block">
+          <div class="project-body">
+            <div class="project-tag">Historia clínica</div>
+            <h3>Seguimiento clínico del paciente</h3>
+            <p>
+              Registro y consulta de información clínica relevante, permitiendo mantener un historial ordenado
+              de la atención y evolución del paciente.
+            </p>
+          </div>
+
+          <div class="gallery-grid gallery-grid--single">
+            <img class="gallery-image js-lightbox"
+                 src="../assets/img/consultorio-medico/historia-clinica.png"
+                 alt="Módulo de historia clínica del paciente">
+          </div>
+        </article>
+
+        <article class="module-block">
+          <div class="project-body">
+            <div class="project-tag">Vacunación</div>
+            <h3>Control de vacunas</h3>
+            <p>
+              Módulo orientado al registro y consulta de vacunas aplicadas, facilitando el seguimiento
+              del esquema de vacunación del paciente.
+            </p>
+          </div>
+
+          <div class="gallery-grid gallery-grid--single">
+            <img class="gallery-image js-lightbox"
+                 src="../assets/img/consultorio-medico/vacunacion.png"
+                 alt="Módulo de vacunación del sistema de consultorio médico">
+          </div>
+        </article>
+
+        <article class="module-block">
+          <div class="project-body">
+            <div class="project-tag">Estudios médicos</div>
+            <h3>Gestión de estudios</h3>
+            <p>
+              Permite registrar y consultar estudios asociados al paciente, centralizando información médica
+              complementaria dentro del sistema.
+            </p>
+          </div>
+
+          <div class="gallery-grid gallery-grid--single">
+            <img class="gallery-image js-lightbox"
+                 src="../assets/img/consultorio-medico/estudios.png"
+                 alt="Módulo de estudios médicos del paciente">
+          </div>
+        </article>
+
+        <article class="module-block">
+          <div class="project-body">
+            <div class="project-tag">Documentación PDF</div>
+            <h3>Generación de carnet</h3>
+            <p>
+              Funcionalidad para generar documentación en formato PDF, agregando valor administrativo
+              y facilitando la entrega de información al paciente.
+            </p>
+          </div>
+
+          <div class="gallery-grid gallery-grid--single">
+            <img class="gallery-image js-lightbox"
+                 src="../assets/img/consultorio-medico/carnet-pdf.png"
+                 alt="Generación de carnet en PDF del sistema de consultorio médico">
+          </div>
+        </article>
+
+        <article class="module-block">
+          <div class="project-body">
+            <div class="project-tag">Backups</div>
+            <h3>Respaldo de información</h3>
+            <p>
+              Herramienta orientada a preservar la información del sistema mediante copias de seguridad,
+              mejorando la confiabilidad y mantenimiento de los datos.
+            </p>
+          </div>
+
+          <div class="gallery-grid gallery-grid--single">
+            <img class="gallery-image js-lightbox"
+                 src="../assets/img/consultorio-medico/backup.png"
+                 alt="Funcionalidad de backup del sistema de consultorio médico">
+          </div>
+        </article>
       </div>
     </section>
 
@@ -205,10 +301,17 @@
       </div>
     </section>
 
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">×</button>
+      <img class="lightbox-image" id="lightboxImage" src="" alt="">
+    </div>
+
     <footer>
       <span>© 2026 Fernando Bravo</span>
       <span>Proyecto Sistema de Consultorio Médico · Portfolio técnico</span>
     </footer>
   </main>
+
+  <script src="../js/script.js"></script>
 </body>
 </html>

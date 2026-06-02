@@ -922,6 +922,8 @@ footer {
   }
 }
 
+
+
 @media (max-width: 620px) {
   .navbar {
     top: 8px;
@@ -1012,6 +1014,39 @@ footer {
 
 .gallery-image {
   cursor: pointer;
+}
+
+.module-showcase {
+  display: grid;
+  gap: 28px;
+}
+
+.module-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.module-block:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-hover);
+}
+
+.module-block .project-body {
+  padding-bottom: 8px;
+}
+
+.gallery-grid--single {
+  grid-template-columns: 1fr;
+}
+
+.gallery-grid--single .gallery-image {
+  max-height: 520px;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .lightbox {
