@@ -36,21 +36,27 @@
           Proyecto · Gestión personal
         </div>
 
-        <h1>Garage <span class="gradient-text">Control</span></h1>
+        <h1>Mi Garage <span class="gradient-text">Control</span></h1>
 
         <p class="hero-description">
-          Aplicación web orientada al control integral de vehículos personales. Permite registrar
-          autos y motos, cargar mantenimientos, reparaciones, mejoras, costos asociados y estimar
-          próximos services según el historial y kilometraje actual.
+          Aplicación web desarrollada en Python y Streamlit para gestionar el historial completo de vehículos. 
+          Permite registrar mantenimientos, reparaciones, analizar costos mediante dashboards interactivos y estimar próximos services. 
+          Actualmente se encuentra desplegada en la nube utilizando PostgreSQL (Supabase) y Streamlit Community Cloud.
         </p>
 
         <div class="cta-row">
-          <a class="button primary" href="#" target="_blank" rel="noopener noreferrer">
-            Ver GitHub
+          <a class="button primary" 
+          href="https://mi-garaje-control.streamlit.app/" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          Demo Online
           </a>
 
-          <a class="button secondary" href="../index.html#proyectos">
-            Volver al portfolio
+          <a class="button secondary" 
+          href="https://github.com/ferbravo98/mi-garaje-control"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub
           </a>
         </div>
       </div>
@@ -62,16 +68,48 @@
 
         <h2>Stack usado</h2>
 
-        <p class="profile-stack">Python · SQLite · Git</p>
+        <p class="profile-stack">Python · Streamlit · PostgreSQL · Supabase </p>
 
         <div class="tech-icons" aria-label="Tecnologías del proyecto">
           <i class="devicon-python-plain" title="Python"></i>
-          <i class="devicon-sqlite-plain" title="SQLite"></i>
+          <i class="devicon-streamlit-plain" title="Streamlit"></i>
+          <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
           <i class="devicon-git-plain" title="Git"></i>
+          <i class="devicon-github-plain" title="GitHub"></i>
         </div>
       </aside>
     </section>
 
+    <section class="section">
+      <div class="about-card">
+        <div class="about-block">
+          <h3>Estado del proyecto</h3>
+          <ul>
+            <li>Demo online disponible.</li>
+            <li>Aplicación desplegada en Streamlit Community Cloud.</li>
+            <li>Base de datos PostgreSQL alojada en Supabase.</li>
+            <li>Acceso desde PC y dispositivos móviles.</li>
+            <li>Persistencia de datos en la nube.</li>
+            <li>Proyecto versionado con Git y GitHub.</li>
+          </ul>
+        </div>
+
+        <div class="about-block">
+          <h3>Acceso rápido</h3>
+          <p>
+            La aplicación puede probarse directamente desde el navegador, sin instalación local.
+          </p>
+
+          <a class="button primary"
+            href="https://mi-garaje-control.streamlit.app/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Abrir demo online
+          </a>
+        </div>
+      </div>
+    </section>
+    
     <section class="section">
       <div class="section-header">
         <div>
@@ -130,6 +168,11 @@
     src="../assets/img/mi-garage-control/dashboard.png"
     alt="Dashboard Garage Control"
     class="gallery-image js-lightbox">
+  
+  <img
+    src="../assets/img/mi-garage-control/registrar-actividad.png"
+    alt="Registrar Actividad Garage Control"
+    class="gallery-image js-lightbox">
 
   <img
     src="../assets/img/mi-garage-control/proximos-services.png"
@@ -167,22 +210,24 @@
 
       <div class="about-card">
         <div class="about-block">
-          <h3>Habilidades aplicadas</h3>
+          <h3>Competencias técnicas demostradas</h3>
           <ul>
-            <li>Diseño de entidades relacionadas.</li>
-            <li>Persistencia de datos locales.</li>
-            <li>Registro y consulta de información histórica.</li>
-            <li>Separación de datos por tipo de vehículo.</li>
-            <li>Construcción de una solución útil para control personal.</li>
+            <li>Diseño de entidades y relaciones para la gestión de vehículos y mantenimientos.</li>
+            <li>Persistencia de datos en PostgreSQL mediante Supabase.</li>
+            <li>Desarrollo de una aplicación web con Python y Streamlit.</li>
+            <li>Visualización de métricas y gráficos interactivos con Plotly.</li>
+            <li>Despliegue de la aplicación en Streamlit Community Cloud.</li>
+            <li>Construcción de una solución práctica orientada a la gestión vehicular.</li>
+
           </ul>
         </div>
 
         <div class="about-block">
           <h3>Aprendizajes</h3>
           <p>
-            Este proyecto me permitió practicar cómo convertir una necesidad personal
-            en una aplicación concreta, trabajando con registros, relaciones de datos
-            y funcionalidades orientadas al uso diario.
+            Durante el desarrollo evolucioné el proyecto desde una aplicación local basada en SQLite 
+            hacia una aplicación web desplegada en la nube, migrando la persistencia a PostgreSQL mediante Supabase. 
+            Esta evolución me permitió incorporar conceptos de despliegue, bases de datos remotas, arquitectura modular y publicación de aplicaciones web.
           </p>
         </div>
       </div>
@@ -203,12 +248,14 @@
         <div class="about-block">
           <h3>Próximas funcionalidades</h3>
           <ul>
-            <li>Clasificación de registros entre mantenimiento, reparación y mejora.</li>
-            <li>Edición y eliminación de registros del historial.</li>
-            <li>Filtros avanzados por fecha, tipo, categoría y rango de kilometraje.</li>
-            <li>Selección de color identificatorio por vehículo.</li>
-            <li>Exportación de reportes en PDF o Excel.</li>
-            <li>Backup y restauración de la base de datos.</li>
+            <li>Autenticación de usuarios.</li>
+            <li>Asociación de múltiples vehículos por usuario.</li>
+            <li>Colores personalizados por vehiculo.</li>
+            <li>Adjuntar fotografias.</li>
+            <li>Exportación PDF.</li>
+            <li>Recordatorios automáticos.</li>
+            <li>Gestion para concesionarias.</li>
+            <li>Historial transferible entre propietarios.</li>
           </ul>
         </div>
 
