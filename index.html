@@ -15,23 +15,33 @@
   <div class="bg-glow" aria-hidden="true"></div>
   <main class="container">
     <header class="navbar">
-      <a class="brand" href="#">Fernando<span>.</span></a>
-      <nav class="nav-links" aria-label="Navegación principal">
-        <a href="#proyectos">Proyectos</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </header>
+  <a class="brand" href="#">Fernando<span>.</span></a>
+
+  <nav class="nav-links" aria-label="Navegación principal">
+    <a href="#proyectos">Proyectos</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#contacto">Contacto</a>
+
+    <div class="language-switcher">
+      <span class="language-active">ES</span>
+      <span>/</span>
+      <a href="en/index.html">EN</a>
+    </div>
+  </nav>
+</header>
 
     <section class="hero">
       <div class="hero-card">
         <div class="eyebrow">
           <span class="eyebrow-dot" aria-hidden="true"></span>
-          Soluciones de gestión, datos y automatización
+           Analista de Sistemas · Desarrollo de Software
         </div>
         <h1>Fernando <span class="gradient-text">Bravo</span></h1>
         <p class="hero-description">
-          Desarrollo aplicaciones útiles para ordenar procesos, gestionar información y transformar datos en herramientas prácticas. Me enfoco en sistemas de escritorio, bases de datos, automatización y soluciones pensadas para usuarios reales.
+          Desarrollo aplicaciones con Java y Python orientadas a resolver necesidades
+          reales, trabajando con bases de datos SQL, interfaces de usuario y despliegue
+          de soluciones. También cuento con experiencia en instalación, mantenimiento
+          y soporte técnico de las aplicaciones que desarrollo.
         </p>
         <div class="cta-row">
           <a class="button primary" href="https://github.com/ferbravo98" target="_blank" rel="noopener noreferrer">
@@ -48,10 +58,10 @@
           <div class="avatar">FB</div>
         </div>
         <h2>@ferbravo98</h2>
-        <p class="profile-stack">Java · JavaFX · Python · SQL · Datos</p>
+        <p class="profile-stack">Java · Python · SQL · Spring Boot</p>
         <div class="status">
           <span class="status-dot"></span>
-          Buscando mi primera oportunidad IT
+          Disponible para oportunidades en Desarrollo e IT
         </div>
       </aside>
     </section>
@@ -59,20 +69,23 @@
     <section class="section" aria-labelledby="metricas-title">
       <div class="stats-grid">
         <div class="stat-card">
-          <strong>3+</strong>
-          <span>Apps de gestión</span>
+          <strong>Java</strong>
+          <span>Desktop & Backend</span>
         </div>
+
+        <div class="stat-card">
+          <strong>Python</strong>
+          <span>Web & Automatización</span>
+        </div>
+
         <div class="stat-card">
           <strong>SQL</strong>
-          <span>Datos y persistencia</span>
+          <span>Persistencia y datos</span>
         </div>
+
         <div class="stat-card">
-          <strong>PDF</strong>
-          <span>Reportes y exportación</span>
-        </div>
-        <div class="stat-card">
-          <strong>Git</strong>
-          <span>Versionado profesional</span>
+          <strong>Cloud</strong>
+          <span>Deploy y servicios web</span>
         </div>
       </div>
     </section>
@@ -89,21 +102,37 @@
       <div class="projects-grid">
         <article class="project-card project-card--featured">
           <div class="project-media">
-            <img class="project-image" src="assets/img/consultorio-medico/listado-pacientes.png" alt="Captura del sistema de consultorio médico">
+            <img
+              class="project-image"
+              src="assets/img/consultorio-medico/listado-pacientes.png"
+              alt="Captura del Sistema de Consultorio Médico"
+            >
             <div class="project-media-overlay"></div>
           </div>
           <div class="project-body">
-            <div class="project-tag">Proyecto principal</div>
+            <div class="project-tag">Java · Aplicación de escritorio</div>
             <h3>Sistema de Consultorio Médico</h3>
-            <p>Aplicación de escritorio para gestionar pacientes, consultas, historia clínica, estudios, vacunación y exportación de documentos.</p>
+            <p>
+              Aplicación de escritorio para gestionar pacientes, historia clínica,
+              consultas, estudios y vacunación, con persistencia SQLite,
+              generación de documentos PDF y sistema de backups.
+            </p>
             <div class="project-footer">
               <div class="project-links">
-                <a href="https://github.com/ferbravo98/ConsultorioMedico" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="proyectos/consultorio.html">Ver más</a>
+                <a
+                  href="https://github.com/ferbravo98/ConsultorioMedico"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+                <a href="proyectos/consultorio.html">
+                  Ver más
+                </a>
               </div>
               <div class="tech-icons" aria-label="Tecnologías">
                 <i class="devicon-java-plain" title="Java"></i>
-                <i class="devicon-mysql-plain" title="MySQL"></i>
+                <i class="devicon-sqlite-plain" title="SQLite"></i>
                 <i class="devicon-git-plain" title="Git"></i>
               </div>
             </div>
@@ -112,27 +141,50 @@
 
         <article class="project-card">
   <div class="project-media">
-    <img class="project-image" src="assets/img/mi-garage-control/proximos-services.png" alt="Captura de la app de mantenimiento de vehículos">
+    <img
+      class="project-image"
+      src="assets/img/mi-garage-control/proximos-services.png"
+      alt="Dashboard de Mi Garage Control con próximos services"
+    >
     <div class="project-media-overlay"></div>
   </div>
 
   <div class="project-body">
-    <div class="project-tag">Gestión personal</div>
-    <h3>App de Mantenimiento de Vehículos</h3>
+    <div class="project-tag">Python · Cloud</div>
+
+    <h3>Mi Garage Control</h3>
+
     <p>
-      Sistema para registrar autos y motos, controlar mantenimientos, visualizar costos
-      y diferenciar reparaciones según el tipo de vehículo.
+      Aplicación web para gestionar autos y motos, registrar mantenimientos,
+      controlar costos y anticipar próximos services mediante kilometraje e historial.
     </p>
 
     <div class="project-footer">
       <div class="project-links">
-        <a href="https://github.com/ferbravo98/mi-garaje-control" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="proyectos/vehiculos.html">Ver más</a>
+        <a
+          href="https://mi-garaje-control.streamlit.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Demo online
+        </a>
+
+        <a
+          href="https://github.com/ferbravo98/mi-garaje-control"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a href="proyectos/vehiculos.html">
+          Ver más
+        </a>
       </div>
 
       <div class="tech-icons" aria-label="Tecnologías">
         <i class="devicon-python-plain" title="Python"></i>
-        <i class="devicon-sqlite-plain" title="SQLite"></i>
+        <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
         <i class="devicon-git-plain" title="Git"></i>
       </div>
     </div>
@@ -175,24 +227,35 @@
         <div>
           <p class="section-label">Perfil</p>
           <h2 class="section-title">Sobre mí</h2>
-          <p class="section-subtitle">Me interesa unir desarrollo de software, análisis de procesos y tratamiento de datos para construir herramientas útiles.</p>
+          <p class="section-subtitle">
+            Desarrollo soluciones de software a partir de necesidades reales,
+            combinando programación, bases de datos, análisis de procesos y soporte técnico.
+          </p>
         </div>
       </div>
 
       <div class="about-card">
         <div class="about-block">
-          <h3>Mi enfoque</h3>
+          <h3>Mi perfil</h3>
           <p>
-            Me gusta analizar cómo se organiza la información dentro de un negocio, consultorio o proceso cotidiano, para luego convertir esa necesidad en una aplicación simple, clara y funcional. Mi objetivo es crecer hacia un perfil técnico orientado a sistemas de gestión, automatización y datos.
+            Soy Analista de Sistemas y continúo mi formación en la Licenciatura en
+            Informática. Desarrollo aplicaciones con Java y Python orientadas a
+            resolver necesidades concretas, desde sistemas de escritorio hasta
+            aplicaciones web conectadas a bases de datos y servicios cloud.
+          </p>
+          <p>
+            Me interesa participar en proyectos donde pueda combinar desarrollo,
+            análisis de requerimientos, resolución de problemas y soporte técnico.
           </p>
         </div>
         <div class="about-block">
-          <h3>Actualmente trabajo con</h3>
+          <h3>Competencias principales</h3>
           <ul>
-            <li>Aplicaciones de escritorio con JavaFX y Tkinter.</li>
-            <li>Bases de datos SQL para almacenar y consultar información.</li>
-            <li>Exportación de datos, reportes y generación de documentos PDF.</li>
-            <li>Git y GitHub para versionar y documentar mis proyectos.</li>
+            <li><strong>Desarrollo:</strong> Java, Spring Boot, JavaFX, Python y Streamlit.</li>
+            <li><strong>Bases de datos:</strong> PostgreSQL, SQLite, MySQL y SQL.</li>
+            <li><strong>Herramientas:</strong> Git, GitHub, Maven y APIs REST.</li>
+            <li><strong>Cloud:</strong> Supabase, Neon, Render y Streamlit Community Cloud.</li>
+            <li><strong>Soporte IT:</strong> instalación, configuración, troubleshooting y soporte remoto en Windows.</li>
           </ul>
         </div>
       </div>
@@ -224,13 +287,15 @@
                 LinkedIn
               </span>
               <h3 class="linkedin-showcase__name">Fernando Nicolás Bravo</h3>
-              <p class="linkedin-showcase__headline">Desarrollador de software · Sistemas de gestión, datos y automatización</p>
+              <p class="linkedin-showcase__headline">Analista de Sistemas · Java · Python · SQL · Desarrollo de Software</p>
               <p class="linkedin-showcase__meta">Argentina · Abierto a oportunidades IT</p>
             </div>
           </div>
           <div class="linkedin-showcase__aside">
             <p class="linkedin-showcase__pitch">
-              Construyo aplicaciones de escritorio y herramientas que ordenan procesos reales. Si buscás perfil junior con enfoque práctico, conversemos.
+              Desarrollo aplicaciones orientadas a necesidades reales, trabajando con
+              Java, Python, bases de datos SQL y herramientas cloud. Abierto a
+              oportunidades en Desarrollo de Software e IT.
             </p>
             <ul class="linkedin-showcase__skills" aria-label="Competencias destacadas">
               <li>Java</li>

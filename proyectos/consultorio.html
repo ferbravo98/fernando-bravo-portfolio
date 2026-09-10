@@ -26,6 +26,12 @@
         <a href="../index.html#proyectos">Proyectos</a>
         <a href="../index.html#sobre-mi">Sobre mí</a>
         <a href="../index.html#contacto">Contacto</a>
+        
+        <div class="language-switcher">
+          <span class="language-active">ES</span>
+          <span>/</span>
+          <a href="../en/projects/medical-office.html">EN</a>
+        </div>
       </nav>
     </header>
 
@@ -33,15 +39,16 @@
       <div class="hero-card">
         <div class="eyebrow">
           <span class="eyebrow-dot" aria-hidden="true"></span>
-          Proyecto principal · Aplicación de gestión
+          Java Desktop · Sistema en uso real
         </div>
 
         <h1>Consultorio <span class="gradient-text">Médico</span></h1>
 
         <p class="hero-description">
-          Aplicación de escritorio orientada a la gestión de pacientes, consultas,
-          historia clínica, estudios, vacunación y generación de documentos. Es mi
-          proyecto principal por alcance, utilidad real y evolución técnica.
+          Aplicación de escritorio desarrollada con Java y JavaFX para centralizar
+          la gestión de pacientes, historia clínica, estudios y vacunación.
+          Utiliza SQLite para persistencia local e incorpora generación de documentos,
+          backups y herramientas orientadas al trabajo cotidiano en consultorio.
         </p>
 
         <div class="cta-row">
@@ -62,11 +69,14 @@
 
         <h2>Stack usado</h2>
 
-        <p class="profile-stack">Java · JavaFX · SQL · Git · PDF</p>
+        <p class="profile-stack">
+          Java 21 · JavaFX · SQLite · Maven · PDF
+        </p>
 
         <div class="tech-icons" aria-label="Tecnologías del proyecto">
-          <i class="devicon-java-plain" title="Java"></i>
-          <i class="devicon-mysql-plain" title="MySQL"></i>
+          <i class="devicon-java-plain" title="Java 21"></i>
+          <i class="devicon-sqlite-plain" title="SQLite"></i>
+          <i class="devicon-maven-plain" title="Maven"></i>
           <i class="devicon-git-plain" title="Git"></i>
         </div>
       </aside>
@@ -78,8 +88,9 @@
           <p class="section-label">Resumen</p>
           <h2 class="section-title">¿Qué problema resuelve?</h2>
           <p class="section-subtitle">
-            El sistema busca digitalizar y ordenar información médica que normalmente
-            puede quedar dispersa en registros manuales, planillas o documentos separados.
+            Centraliza la información clínica y administrativa del paciente en una sola
+            aplicación, evitando registros dispersos y facilitando el acceso al historial,
+            estudios, vacunación y documentación.
           </p>
         </div>
       </div>
@@ -101,9 +112,10 @@
         <div class="about-block">
           <h3>Enfoque técnico</h3>
           <p>
-            El proyecto fue desarrollado como una aplicación de escritorio con Java y JavaFX,
-            separando la interfaz, la lógica de negocio y el acceso a datos. La persistencia
-            permite conservar información clínica y consultarla de forma ordenada.
+            Aplicación desarrollada con Java 21 y JavaFX, utilizando SQLite como
+            persistencia local mediante JDBC. El proyecto separa interfaz, lógica
+            de aplicación y acceso a datos, e incorpora generación de documentos
+            PDF, validaciones y mecanismos de backup.
           </p>
         </div>
       </div>
@@ -239,8 +251,9 @@
           <p class="section-label">Valor técnico</p>
           <h2 class="section-title">Qué demuestra este proyecto</h2>
           <p class="section-subtitle">
-            Más allá de la interfaz, este proyecto muestra lógica de negocio, persistencia,
-            modelado de datos y construcción de una herramienta útil para un usuario real.
+            Proyecto de alcance integral que combina desarrollo Java, interfaz gráfica,
+            persistencia SQL, generación de documentos y mantenimiento de una aplicación
+            utilizada en un entorno real.
           </p>
         </div>
       </div>
@@ -249,20 +262,24 @@
         <div class="about-block">
           <h3>Habilidades aplicadas</h3>
           <ul>
-            <li>Diseño de una aplicación con múltiples módulos.</li>
-            <li>Manejo de formularios, tablas y navegación entre vistas.</li>
-            <li>Persistencia de datos mediante base SQL.</li>
-            <li>Validación y actualización de información.</li>
-            <li>Generación de reportes o documentos exportables.</li>
+            <li>Desarrollo de aplicaciones de escritorio con Java y JavaFX.</li>
+            <li>Diseño de interfaces con formularios, tablas y navegación entre vistas.</li>
+            <li>Persistencia local con SQLite y JDBC.</li>
+            <li>Modelado y consulta de información relacionada.</li>
+            <li>Validación y actualización de datos.</li>
+            <li>Generación de documentos PDF con iText.</li>
+            <li>Implementación de mecanismos de backup.</li>
+            <li>Gestión de dependencias y ejecución mediante Maven.</li>
           </ul>
         </div>
 
         <div class="about-block">
-          <h3>Aprendizajes</h3>
+          <h3>Desarrollo y mantenimiento</h3>
           <p>
-            Este proyecto me permitió acercarme a un flujo real de trabajo: entender una
-            necesidad concreta, convertirla en funcionalidades, ordenar la información y
-            construir una herramienta mantenible para mejorar un proceso cotidiano.
+            El proyecto surgió a partir de una necesidad concreta y evolucionó mediante
+            pruebas y uso cotidiano. Además del desarrollo de funcionalidades, implicó
+            instalación en Windows, configuración del entorno, resolución de incidencias,
+            mantenimiento de datos y soporte a usuarios.
           </p>
         </div>
       </div>

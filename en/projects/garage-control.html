@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mi Garage Control | Python, Streamlit & PostgreSQL | Fernando Bravo</title>
+
+  <meta
+    name="description"
+    content="Mi Garage Control is a web application developed with Python, Streamlit and PostgreSQL for managing vehicles, maintenance history, expenses and upcoming services."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  >
+</head>
+
+<body>
+
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="container">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+      <a class="brand" href="../index.html">
+        Fernando<span>.</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+
+        <div class="language-switcher">
+          <a href="../../proyectos/vehiculos.html">ES</a>
+          <span>/</span>
+          <span class="language-active">EN</span>
+        </div>
+
+      </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-card">
+
+        <div class="eyebrow">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          Python Web · Cloud Application
+        </div>
+
+        <h1>
+          Mi Garage <span class="gradient-text">Control</span>
+        </h1>
+
+        <p class="hero-description">
+          Web application developed with Python and Streamlit for managing
+          cars and motorcycles, maintenance history, expenses and upcoming
+          services. The project evolved from local SQLite persistence to a
+          cloud architecture using PostgreSQL and Supabase.
+        </p>
+
+        <div class="cta-row">
+
+          <a
+            class="button primary"
+            href="https://mi-garaje-control.streamlit.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Demo
+          </a>
+
+          <a
+            class="button secondary"
+            href="https://github.com/ferbravo98/mi-garaje-control"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View GitHub
+          </a>
+
+          <a
+            class="button ghost"
+            href="../index.html#projects"
+          >
+            Back to portfolio
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- STACK -->
+      <aside class="profile-card">
+
+        <div class="avatar-ring">
+          <div class="avatar">MG</div>
+        </div>
+
+        <h2>Tech Stack</h2>
+
+        <p class="profile-stack">
+          Python · Streamlit · PostgreSQL · Supabase · Plotly
+        </p>
+
+        <div
+          class="tech-icons"
+          aria-label="Project technologies"
+        >
+          <i class="devicon-python-plain" title="Python"></i>
+          <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+          <i class="devicon-git-plain" title="Git"></i>
+        </div>
+
+      </aside>
+
+    </section>
+
+
+    <!-- PROBLEM -->
+    <section class="section">
+
+      <div class="section-header">
+
+        <div>
+
+          <p class="section-label">Overview</p>
+
+          <h2 class="section-title">
+            What problem does it solve?
+          </h2>
+
+          <p class="section-subtitle">
+            Vehicle maintenance information is often scattered across notes,
+            invoices or memory. Mi Garage Control centralizes this information
+            and provides a clear view of maintenance history, expenses and
+            upcoming services.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-card">
+
+        <div class="about-block">
+
+          <h3>Main Features</h3>
+
+          <ul>
+            <li>Car and motorcycle registration.</li>
+            <li>Maintenance and repair history.</li>
+            <li>Vehicle mileage tracking.</li>
+            <li>Expense and maintenance cost records.</li>
+            <li>Upcoming service estimation based on mileage.</li>
+            <li>Visual alerts for upcoming maintenance.</li>
+            <li>Dashboard with vehicle information and expenses.</li>
+            <li>Filtering and historical data analysis.</li>
+            <li>Spanish and English interface support.</li>
+          </ul>
+
+        </div>
+
+
+        <div class="about-block">
+
+          <h3>Technical Approach</h3>
+
+          <p>
+            The application was developed with Python and Streamlit using
+            PostgreSQL for data persistence hosted on Supabase. Application
+            logic manages vehicles, maintenance categories, expenses and
+            service estimation based on mileage, while Plotly provides
+            interactive data visualization.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MODULES / SCREENSHOTS -->
+        <section class="section">
+
+  <div class="section-header">
+    <div>
+      <p class="section-label">Application</p>
+
+      <h2 class="section-title">
+        Main Features
+      </h2>
+
+      <p class="section-subtitle">
+        Screenshots showing the main workflows, service tracking and data
+        visualization features available in Mi Garage Control.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="module-showcase">
+
+    <!-- DASHBOARD -->
+    <article class="module-block">
+
+      <div class="project-body">
+        <div class="project-tag">Dashboard</div>
+
+        <h3>
+          Vehicle Overview
+        </h3>
+
+        <p>
+          The dashboard provides a summarized view of vehicle activity,
+          maintenance status and relevant information for quick monitoring.
+        </p>
+      </div>
+
+      <div class="gallery-grid gallery-grid--single">
+
+        <img
+          class="gallery-image js-lightbox"
+          src="../../assets/img/mi-garage-control/dashboard.png"
+          alt="Mi Garage Control dashboard"
+        >
+
+      </div>
+
+    </article>
+
+
+    <!-- ACTIVITY -->
+    <article class="module-block">
+
+      <div class="project-body">
+        <div class="project-tag">Activity Records</div>
+
+        <h3>
+          Maintenance and Repair Registration
+        </h3>
+
+        <p>
+          Maintenance, repairs and improvements can be recorded with their
+          associated vehicle information, mileage and costs.
+        </p>
+      </div>
+
+      <div class="gallery-grid gallery-grid--single">
+
+        <img
+          class="gallery-image js-lightbox"
+          src="../../assets/img/mi-garage-control/registrar-actividad.png"
+          alt="Vehicle maintenance activity registration"
+        >
+
+      </div>
+
+    </article>
+
+
+    <!-- UPCOMING SERVICES -->
+    <article class="module-block">
+
+      <div class="project-body">
+        <div class="project-tag">Service Tracking</div>
+
+        <h3>
+          Upcoming Services
+        </h3>
+
+        <p>
+          The application estimates upcoming maintenance based on mileage
+          and previous vehicle records, helping users anticipate future
+          service requirements.
+        </p>
+      </div>
+
+      <div class="gallery-grid gallery-grid--single">
+
+        <img
+          class="gallery-image js-lightbox"
+          src="../../assets/img/mi-garage-control/proximos-services.png"
+          alt="Upcoming vehicle services"
+        >
+
+      </div>
+
+    </article>
+
+
+    <!-- REPORTS -->
+    <article class="module-block">
+
+      <div class="project-body">
+        <div class="project-tag">Reports</div>
+
+        <h3>
+          Costs and Maintenance Analysis
+        </h3>
+
+        <p>
+          Reports help analyze recorded expenses and maintenance activity,
+          making vehicle costs easier to understand over time.
+        </p>
+      </div>
+
+      <div class="gallery-grid gallery-grid--single">
+
+        <img
+          class="gallery-image js-lightbox"
+          src="../../assets/img/mi-garage-control/reportes.png"
+          alt="Mi Garage Control maintenance and expense reports"
+        >
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+        <!-- VEHICLES -->
+        <article class="module-block">
+
+          <div class="project-body">
+
+            <div class="project-tag">
+              Vehicle Management
+            </div>
+
+            <h3>
+              Cars and Motorcycles
+            </h3>
+
+            <p>
+              Vehicles can be registered and managed individually, keeping
+              their information and maintenance history organized in one place.
+            </p>
+
+          </div>
+
+          <div class="gallery-grid gallery-grid--single">
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/mi-garage-control/mis-vehiculos.png"
+              alt="Vehicle management in Mi Garage Control"
+            >
+
+          </div>
+
+        </article>
+
+
+        <!-- MAINTENANCE -->
+        <article class="module-block">
+
+          <div class="project-body">
+
+            <div class="project-tag">
+              Maintenance History
+            </div>
+
+            <h3>
+              Maintenance and Repairs
+            </h3>
+
+            <p>
+              Each vehicle maintains an organized record of maintenance,
+              repairs and improvements, including mileage, dates and costs.
+            </p>
+
+          </div>
+
+          <div class="gallery-grid gallery-grid--single">
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/mi-garage-control/mantenimientos.png"
+              alt="Vehicle maintenance history"
+            >
+
+          </div>
+
+        </article>
+
+
+        <!-- UPCOMING SERVICES -->
+        <article class="module-block">
+
+          <div class="project-body">
+
+            <div class="project-tag">
+              Service Tracking
+            </div>
+
+            <h3>
+              Upcoming Services
+            </h3>
+
+            <p>
+              The application estimates upcoming maintenance based on vehicle
+              mileage and previous records, helping users anticipate future
+              service requirements.
+            </p>
+
+          </div>
+
+          <div class="gallery-grid gallery-grid--single">
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/mi-garage-control/proximos-services.png"
+              alt="Upcoming vehicle services"
+            >
+
+          </div>
+
+        </article>
+
+
+        <!-- DASHBOARD -->
+        <article class="module-block">
+
+          <div class="project-body">
+
+            <div class="project-tag">
+              Dashboard
+            </div>
+
+            <h3>
+              Costs and Data Visualization
+            </h3>
+
+            <p>
+              The dashboard provides a summarized view of maintenance activity
+              and expenses, using charts to make vehicle costs easier to
+              understand and analyze.
+            </p>
+
+          </div>
+
+          <div class="gallery-grid gallery-grid--single">
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/mi-garage-control/dashboard.png"
+              alt="Mi Garage Control dashboard"
+            >
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- TECHNICAL VALUE -->
+    <section class="section">
+
+      <div class="section-header">
+
+        <div>
+
+          <p class="section-label">
+            Technical Value
+          </p>
+
+          <h2 class="section-title">
+            What This Project Demonstrates
+          </h2>
+
+          <p class="section-subtitle">
+            An end-to-end Python web application covering data modeling,
+            business logic, visualization, database migration and cloud
+            deployment.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-card">
+
+        <div class="about-block">
+
+          <h3>
+            Technical Skills Demonstrated
+          </h3>
+
+          <ul>
+            <li>Web application development with Python and Streamlit.</li>
+            <li>Relational data modeling and SQL queries.</li>
+            <li>PostgreSQL persistence hosted on Supabase.</li>
+            <li>Data processing and analysis with Pandas.</li>
+            <li>Interactive data visualization with Plotly.</li>
+            <li>Business logic for vehicle maintenance management.</li>
+            <li>Migration from SQLite to PostgreSQL.</li>
+            <li>Cloud deployment with Streamlit Community Cloud.</li>
+            <li>Source control with Git and GitHub.</li>
+          </ul>
+
+        </div>
+
+
+        <div class="about-block">
+
+          <h3>
+            Project Evolution
+          </h3>
+
+          <p>
+            The first version used SQLite and was designed for local use.
+            As the project evolved, the persistence layer was migrated to
+            PostgreSQL hosted on Supabase and the application was deployed
+            through Streamlit Community Cloud, allowing it to be accessed
+            from both desktop and mobile devices.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ARCHITECTURE -->
+    <section class="section">
+
+      <div class="section-header">
+
+        <div>
+
+          <p class="section-label">
+            Architecture
+          </p>
+
+          <h2 class="section-title">
+            From Local App to Cloud
+          </h2>
+
+          <p class="section-subtitle">
+            The project evolved beyond its initial local prototype into a
+            web application with cloud-hosted persistence.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-card">
+
+        <div class="about-block">
+
+          <h3>Initial Version</h3>
+
+          <ul>
+            <li>Python application.</li>
+            <li>Streamlit interface.</li>
+            <li>Local SQLite database.</li>
+            <li>Designed primarily for personal use.</li>
+          </ul>
+
+        </div>
+
+
+        <div class="about-block">
+
+          <h3>Current Version</h3>
+
+          <ul>
+            <li>Python + Streamlit web application.</li>
+            <li>PostgreSQL relational database.</li>
+            <li>Database hosted on Supabase.</li>
+            <li>Deployment on Streamlit Community Cloud.</li>
+            <li>Desktop and mobile browser access.</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ROADMAP -->
+    <section class="section">
+
+      <div class="section-header">
+
+        <div>
+
+          <p class="section-label">
+            Future Improvements
+          </p>
+
+          <h2 class="section-title">
+            Roadmap
+          </h2>
+
+          <p class="section-subtitle">
+            Planned improvements to expand the application and support more
+            advanced vehicle management use cases.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-card">
+
+        <div class="about-block">
+
+          <h3>
+            Planned Features
+          </h3>
+
+          <ul>
+            <li>User authentication.</li>
+            <li>Multiple vehicles per user.</li>
+            <li>Vehicle photos and visual customization.</li>
+            <li>PDF maintenance reports.</li>
+            <li>Maintenance reminders.</li>
+            <li>More detailed expense analytics.</li>
+          </ul>
+
+        </div>
+
+
+        <div class="about-block">
+
+          <h3>
+            Long-Term Vision
+          </h3>
+
+          <p>
+            Extend the application beyond personal vehicle management by
+            supporting transferable maintenance histories and workflows that
+            could also be useful for workshops, dealerships or vehicle fleet
+            management.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="section">
+
+      <div class="about-card">
+
+        <div class="about-block">
+
+          <h3>Try the Application</h3>
+
+          <p>
+            Mi Garage Control is currently deployed online and can be accessed
+            directly from a web browser.
+          </p>
+
+          <div class="cta-row">
+
+            <a
+              class="button primary"
+              href="https://mi-garaje-control.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Live Demo
+            </a>
+
+            <a
+              class="button secondary"
+              href="https://github.com/ferbravo98/mi-garaje-control"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Source Code
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+
+      <button
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Close image"
+      >
+        ×
+      </button>
+
+      <img
+        class="lightbox-image"
+        id="lightboxImage"
+        src=""
+        alt=""
+      >
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+      <span>
+        © 2026 Fernando Bravo
+      </span>
+
+      <span>
+        Mi Garage Control · Python Web Application
+      </span>
+
+    </footer>
+
+  </main>
+
+  <script src="../../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Medical Office Management System | Java & JavaFX | Fernando Bravo</title>
+
+  <meta
+    name="description"
+    content="Medical Office Management System developed with Java 21, JavaFX and SQLite for managing patients, medical records, studies, vaccinations, PDF documents and backups."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  >
+</head>
+
+<body>
+
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="container">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+      <a class="brand" href="../index.html">
+        Fernando<span>.</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+
+        <div class="language-switcher">
+          <a href="../../proyectos/consultorio.html">ES</a>
+          <span>/</span>
+          <span class="language-active">EN</span>
+        </div>
+
+      </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-card">
+
+        <div class="eyebrow">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          Java Desktop · Real-World System
+        </div>
+
+        <h1>
+          Medical Office <span class="gradient-text">Management System</span>
+        </h1>
+
+        <p class="hero-description">
+          Desktop application developed with Java and JavaFX to centralize
+          patient management, medical records, studies and vaccinations.
+          It uses SQLite for local data persistence and includes PDF document
+          generation, database backups and tools designed for everyday
+          medical office workflows.
+        </p>
+
+        <div class="cta-row">
+
+          <a
+            class="button primary"
+            href="https://github.com/ferbravo98/ConsultorioMedico"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View GitHub
+          </a>
+
+          <a
+            class="button secondary"
+            href="../index.html#projects"
+          >
+            Back to portfolio
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- STACK -->
+      <aside class="profile-card">
+
+        <div class="avatar-ring">
+          <div class="avatar">CM</div>
+        </div>
+
+        <h2>Tech Stack</h2>
+
+        <p class="profile-stack">
+          Java 21 · JavaFX · SQLite · Maven · PDF
+        </p>
+
+        <div
+          class="tech-icons"
+          aria-label="Project technologies"
+        >
+          <i class="devicon-java-plain" title="Java 21"></i>
+          <i class="devicon-sqlite-plain" title="SQLite"></i>
+          <i class="devicon-maven-plain" title="Maven"></i>
+          <i class="devicon-git-plain" title="Git"></i>
+        </div>
+
+      </aside>
+
+    </section>
+
+
+    <!-- PROBLEM -->
+    <section class="section">
+
+      <div class="section-header">
+
+        <div>
+
+          <p class="section-label">Overview</p>
+
+          <h2 class="section-title">
+            What problem does it solve?
+          </h2>
+
+          <p class="section-subtitle">
+            The system centralizes clinical and administrative patient
+            information in a single application, reducing scattered records
+            and providing easier access to medical history, studies,
+            vaccinations and documentation.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-card">
+
+        <div class="about-block">
+
+          <h3>Main Features</h3>
+
+          <ul>
+            <li>Patient registration and management.</li>
+            <li>Patient search and information updates.</li>
+            <li>Medical consultation and history management.</li>
+            <li>Medical study records.</li>
+            <li>Vaccination tracking.</li>
+            <li>PDF document generation.</li>
+            <li>Automatic database backups.</li>
+          </ul>
+
+        </div>
+
+
+        <div class="about-block">
+
+          <h3>Technical Approach</h3>
+
+          <p>
+            Desktop application developed with Java 21 and JavaFX, using
+            SQLite for local persistence through JDBC. The project separates
+            the user interface, application logic and data access, while also
+            incorporating data validation, PDF document generation and
+            database backup mechanisms.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MODULES -->
+    <section class="section">
+
+      <div class="section-header">
+
+        <div>
+
+          <p class="section-label">Modules</p>
+
+          <h2 class="section-title">
+            System Overview
+          </h2>
+
+          <p class="section-subtitle">
+            Screenshots organized by module to demonstrate the main workflows
+            and features of the medical office management system.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="module-showcase">
+
+
+        <!-- PATIENTS -->
+        <article class="module-block">
+
+          <div class="project-body">
+
+            <div class="project-tag">
+              Patient Management
+            </div>
+
+            <h3>
+              Patient List, Registration and Details
+            </h3>
+
+            <p>
+              New patients can be registered, existing records can be searched
+              and updated, and each patient's administrative and clinical
+              information can be accessed from a centralized view.
+            </p>
+
+          </div>
+
+
+          <div class="gallery-grid">
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/consultorio-medico/listado-pacientes.png"
+              alt="Patient list in the medical office management system"
+            >
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/consultorio-medico/nuevo-paciente.png"
+              alt="New patient registration form"
+            >
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/consultorio-medico/detalle-paciente.png"
+              alt="Patient details in the medical office management system"
+            >
+
+          </div>
+
+        </article>
+
+
+        <!-- MEDICAL HISTORY -->
+        <article class="module-block">
+
+          <div class="project-body">
+
+            <div class="project-tag">
+              Medical Records
+            </div>
+
+            <h3>
+              Patient Clinical History
+            </h3>
+
+            <p>
+              Clinical information can be recorded and reviewed to maintain
+              an organized history of consultations and patient progress.
+            </p>
+
+          </div>
+
+
+          <div class="gallery-grid gallery-grid--single">
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/consultorio-medico/historia-clinica.png"
+              alt="Patient medical history module"
+            >
+
+          </div>
+
+        </article>
+
+
+        <!-- VACCINATION -->
+        <article class="module-block">
+
+          <div class="project-body">
+
+            <div class="project-tag">
+              Vaccination
+            </div>
+
+            <h3>
+              Vaccination Tracking
+            </h3>
+
+            <p>
+              Module designed to record and review administered vaccines,
+              making it easier to track each patient's vaccination schedule.
+            </p>
+
+          </div>
+
+
+          <div class="gallery-grid gallery-grid--single">
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/consultorio-medico/vacunacion.png"
+              alt="Vaccination tracking module"
+            >
+
+          </div>
+
+        </article>
+
+
+        <!-- STUDIES -->
+        <article class="module-block">
+
+          <div class="project-body">
+
+            <div class="project-tag">
+              Medical Studies
+            </div>
+
+            <h3>
+              Study Management
+            </h3>
+
+            <p>
+              Medical studies associated with each patient can be registered
+              and reviewed, keeping complementary clinical information
+              centralized within the system.
+            </p>
+
+          </div>
+
+
+          <div class="gallery-grid gallery-grid--single">
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/consultorio-medico/estudios.png"
+              alt="Medical studies management module"
+            >
+
+          </div>
+
+        </article>
+
+
+        <!-- PDF -->
+        <article class="module-block">
+
+          <div class="project-body">
+
+            <div class="project-tag">
+              PDF Documents
+            </div>
+
+            <h3>
+              Document Generation
+            </h3>
+
+            <p>
+              The application generates PDF documentation from stored
+              information, supporting administrative workflows and making
+              patient information easier to deliver and share.
+            </p>
+
+          </div>
+
+
+          <div class="gallery-grid gallery-grid--single">
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/consultorio-medico/carnet-pdf.png"
+              alt="PDF document generated by the medical office management system"
+            >
+
+          </div>
+
+        </article>
+
+
+        <!-- BACKUPS -->
+        <article class="module-block">
+
+          <div class="project-body">
+
+            <div class="project-tag">
+              Backups
+            </div>
+
+            <h3>
+              Data Backup
+            </h3>
+
+            <p>
+              Backup mechanisms help preserve application data and improve
+              reliability, recovery and long-term system maintenance.
+            </p>
+
+          </div>
+
+
+          <div class="gallery-grid gallery-grid--single">
+
+            <img
+              class="gallery-image js-lightbox"
+              src="../../assets/img/consultorio-medico/backup.png"
+              alt="Database backup functionality"
+            >
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- TECHNICAL VALUE -->
+    <section class="section">
+
+      <div class="section-header">
+
+        <div>
+
+          <p class="section-label">
+            Technical Value
+          </p>
+
+          <h2 class="section-title">
+            What This Project Demonstrates
+          </h2>
+
+          <p class="section-subtitle">
+            An end-to-end project combining Java development, graphical user
+            interfaces, SQL persistence, document generation and maintenance
+            of an application used in a real-world environment.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-card">
+
+        <div class="about-block">
+
+          <h3>
+            Technical Skills Demonstrated
+          </h3>
+
+          <ul>
+            <li>Desktop application development with Java and JavaFX.</li>
+            <li>Forms, tables and navigation between application views.</li>
+            <li>Local persistence using SQLite and JDBC.</li>
+            <li>Relational data modeling and queries.</li>
+            <li>Data validation and update workflows.</li>
+            <li>PDF document generation with iText.</li>
+            <li>Database backup mechanisms.</li>
+            <li>Dependency management and execution with Maven.</li>
+          </ul>
+
+        </div>
+
+
+        <div class="about-block">
+
+          <h3>
+            Development & Maintenance
+          </h3>
+
+          <p>
+            The project originated from a real-world need and evolved through
+            testing and everyday use. In addition to feature development, it
+            involved Windows installation, environment configuration,
+            troubleshooting, data maintenance and end-user support.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ROADMAP -->
+    <section class="section">
+
+      <div class="section-header">
+
+        <div>
+
+          <p class="section-label">
+            Future Improvements
+          </p>
+
+          <h2 class="section-title">
+            Roadmap
+          </h2>
+
+          <p class="section-subtitle">
+            Potential improvements to continue evolving the system into a more
+            complete medical office management solution.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-card">
+
+        <div class="about-block">
+
+          <h3>
+            Planned Features
+          </h3>
+
+          <ul>
+            <li>User authentication and roles.</li>
+            <li>Advanced filters by patient, date or consultation type.</li>
+            <li>Greater customization of PDF documents.</li>
+            <li>Dashboard with basic medical office statistics.</li>
+            <li>Improved data backup and recovery mechanisms.</li>
+          </ul>
+
+        </div>
+
+
+        <div class="about-block">
+
+          <h3>
+            Project Goal
+          </h3>
+
+          <p>
+            Continue evolving the application into a solid medical office
+            management solution while maintaining a simple interface,
+            structured data and features that provide practical value in
+            everyday use.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+
+      <button
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Close image"
+      >
+        ×
+      </button>
+
+      <img
+        class="lightbox-image"
+        id="lightboxImage"
+        src=""
+        alt=""
+      >
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+      <span>
+        © 2026 Fernando Bravo
+      </span>
+
+      <span>
+        Medical Office Management System · Technical Portfolio
+      </span>
+
+    </footer>
+
+  </main>
+
+
+  <script src="../../js/script.js"></script>
+
+</body>
+</html>

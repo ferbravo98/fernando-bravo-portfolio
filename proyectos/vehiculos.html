@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>App de Mantenimiento de Vehículos | Fernando Bravo</title>
-  <meta name="description" content="Detalle del proyecto App de Mantenimiento de Vehículos, una aplicación para registrar vehículos, mantenimientos, costos y reparaciones." />
+  <title>Mi Garage Control | Python, Streamlit y PostgreSQL | Fernando Bravo</title>
+  <meta
+  name="description"
+  content="Mi Garage Control es una aplicación web desarrollada con Python, Streamlit y PostgreSQL para gestionar vehículos, mantenimientos, costos y próximos services."
+/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +29,11 @@
         <a href="../index.html#proyectos">Proyectos</a>
         <a href="../index.html#sobre-mi">Sobre mí</a>
         <a href="../index.html#contacto">Contacto</a>
+        <div class="language-switcher">
+          <span class="language-active">ES</span>
+          <span>/</span>
+          <a href="../en/projects/garage-control.html">EN</a>
+        </div>
       </nav>
     </header>
 
@@ -33,15 +41,17 @@
       <div class="hero-card">
         <div class="eyebrow">
           <span class="eyebrow-dot" aria-hidden="true"></span>
-          Proyecto · Gestión personal
+          Proyecto · Python Web · Cloud
         </div>
 
         <h1>Mi Garage <span class="gradient-text">Control</span></h1>
 
         <p class="hero-description">
-          Aplicación web desarrollada en Python y Streamlit para gestionar el historial completo de vehículos. 
-          Permite registrar mantenimientos, reparaciones, analizar costos mediante dashboards interactivos y estimar próximos services. 
-          Actualmente se encuentra desplegada en la nube utilizando PostgreSQL (Supabase) y Streamlit Community Cloud.
+          Aplicación web desarrollada con Python y Streamlit para gestionar el historial
+          de mantenimiento de autos y motos. Permite registrar mantenimientos, reparaciones
+          y costos, visualizar métricas mediante dashboards interactivos y anticipar próximos
+          services según kilometraje. Actualmente se encuentra desplegada en Streamlit
+          Community Cloud con persistencia PostgreSQL mediante Supabase.
         </p>
 
         <div class="cta-row">
@@ -68,7 +78,7 @@
 
         <h2>Stack usado</h2>
 
-        <p class="profile-stack">Python · Streamlit · PostgreSQL · Supabase </p>
+        <p class="profile-stack">Python · Streamlit · PostgreSQL · Supabase · Plotly </p>
 
         <div class="tech-icons" aria-label="Tecnologías del proyecto">
           <i class="devicon-python-plain" title="Python"></i>
@@ -116,7 +126,6 @@
           <p class="section-label">Resumen</p>
           <h2 class="section-title">¿Qué problema resuelve?</h2>
           <p class="section-subtitle">
-          <p class="section-subtitle">
           Permite centralizar en un solo lugar el historial completo de cada vehículo,
           reemplazando anotaciones dispersas por un registro organizado de mantenimientos,
           reparaciones, mejoras, costos y próximos services estimados.
@@ -140,12 +149,12 @@
           </ul>
         </div>
         <div class="about-block">
-          <h3>Enfoque técnico</h3>
-          <p>
-            El proyecto trabaja con datos persistentes para construir un historial consultable
-            por vehículo. La lógica diferencia mantenimientos preventivos, reparaciones y mejoras,
-            permitiendo analizar costos, consultar antecedentes y estimar próximos services a partir
-            del kilometraje registrado.
+            <h3>Enfoque técnico</h3>
+            <p>
+              La aplicación utiliza PostgreSQL como capa de persistencia, alojada en Supabase,
+              para mantener un historial consultable por vehículo. La lógica diferencia
+              mantenimientos preventivos, reparaciones y mejoras, permitiendo analizar costos,
+              consultar antecedentes y estimar próximos services a partir del kilometraje registrado.
           </p>
         </div>
       </div>
@@ -193,7 +202,6 @@
     y analizar reportes de gastos y mantenimientos registrados.
   </p>
 </div>
-    </div>
     </section>
 
     <section class="section">
@@ -202,8 +210,9 @@
           <p class="section-label">Valor técnico</p>
           <h2 class="section-title">Qué demuestra este proyecto</h2>
           <p class="section-subtitle">
-            Este proyecto muestra capacidad para modelar información cotidiana,
-            organizarla y transformarla en una herramienta de consulta práctica.
+            Este proyecto demuestra el desarrollo completo de una aplicación web:
+            modelado de datos, lógica de negocio, visualización de información,
+            persistencia PostgreSQL y despliegue en la nube.
           </p>
         </div>
       </div>
@@ -212,13 +221,14 @@
         <div class="about-block">
           <h3>Competencias técnicas demostradas</h3>
           <ul>
-            <li>Diseño de entidades y relaciones para la gestión de vehículos y mantenimientos.</li>
-            <li>Persistencia de datos en PostgreSQL mediante Supabase.</li>
-            <li>Desarrollo de una aplicación web con Python y Streamlit.</li>
+            <li>Modelado de entidades y relaciones para vehículos y mantenimientos.</li>
+            <li>Persistencia y consultas sobre PostgreSQL mediante Supabase.</li>
+            <li>Desarrollo de interfaces web interactivas con Python y Streamlit.</li>
+            <li>Procesamiento y organización de datos con Pandas.</li>
             <li>Visualización de métricas y gráficos interactivos con Plotly.</li>
-            <li>Despliegue de la aplicación en Streamlit Community Cloud.</li>
-            <li>Construcción de una solución práctica orientada a la gestión vehicular.</li>
-
+            <li>Migración de persistencia local SQLite a PostgreSQL.</li>
+            <li>Despliegue y publicación mediante Streamlit Community Cloud.</li>
+            <li>Versionado y mantenimiento del proyecto con Git y GitHub.</li>
           </ul>
         </div>
 
@@ -248,13 +258,11 @@
         <div class="about-block">
           <h3>Próximas funcionalidades</h3>
           <ul>
-            <li>Autenticación de usuarios.</li>
-            <li>Asociación de múltiples vehículos por usuario.</li>
-            <li>Colores personalizados por vehiculo.</li>
-            <li>Adjuntar fotografias.</li>
-            <li>Exportación PDF.</li>
-            <li>Recordatorios automáticos.</li>
-            <li>Gestion para concesionarias.</li>
+            <li>Colores personalizados por vehículo.</li>
+            <li>Adjuntar fotografías.</li>
+            <li>Exportación de información a PDF.</li>
+            <li>Recordatorios automáticos de mantenimiento.</li>
+            <li>Gestión para concesionarias o talleres.</li>
             <li>Historial transferible entre propietarios.</li>
           </ul>
         </div>
